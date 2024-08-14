@@ -13,7 +13,7 @@ document.getElementById('regBtn').addEventListener('click', function() {
     const nombre = document.getElementById("nombre").value.trim();
     const apellido = document.getElementById("apellido").value.trim();
     const email = document.getElementById("email").value.trim();
-    const terminos = document.getElementById("terminos");
+    const terminos = document.getElementById("terminos").checked;
    
     const alertDanger = document.getElementById('alert-danger');
     alertDanger.classList.remove('show');
@@ -21,8 +21,11 @@ document.getElementById('regBtn').addEventListener('click', function() {
     
     if (!password1 || !password2 || !nombre || !apellido || !email || password1 !== password2 || password1.lenght<6 || password2.lenght<6) {
        return showAlertError();
-    }else{
-       return showAlertSuccess();
+    }
+
+    if (!terminos) {
+       showAlertError();
+       return;
     }
       
 
