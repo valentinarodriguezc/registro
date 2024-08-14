@@ -17,9 +17,9 @@ document.getElementById('regBtn').addEventListener('click', function() {
 
     // Validar que las contraseñas coincidan
     if (password1 !== password2) {
-       return showAlertError
+       return (showAlertError)
     }else{
-        return showAlertSuccess
+        return (showAlertSuccess)
     }
 
 });
