@@ -10,13 +10,16 @@ document.getElementById('regBtn').addEventListener('click', function() {
     // Obtener los valores de los campos de contraseña
     const password1 = document.getElementById('password1').value.trim();
     const password2 = document.getElementById('password2').value.trim();
+    const nombre = document.getElementById("nombre").value.trim();
+    const apellido = document.getElementById("apellido").value.trim();
+    const email = document.getElementById("email").value.trim();
 
     // Ocultar la alerta de éxito o error al iniciar la validación
     const alertDanger = document.getElementById('alert-danger');
     alertDanger.classList.remove('show');
 
     // Validar que las contraseñas coincidan
-    if (password1 !== password2) {
+    if (!password1 || !password2 || !nombre || !apellido || !email) {
        return showAlertError();
     }else{
         return showAlertSuccess();
