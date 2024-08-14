@@ -7,13 +7,13 @@ function showAlertError() {
 }
 
 document.getElementById('regBtn').addEventListener('click', function() {
-    
+
     const password1 = document.getElementById('password1').value.trim();
     const password2 = document.getElementById('password2').value.trim();
     const nombre = document.getElementById("nombre").value.trim();
     const apellido = document.getElementById("apellido").value.trim();
     const email = document.getElementById("email").value.trim();
-
+    const terminos = document.getElementById("terminos").value.trim();
    
     const alertDanger = document.getElementById('alert-danger');
     alertDanger.classList.remove('show');
@@ -24,5 +24,4 @@ document.getElementById('regBtn').addEventListener('click', function() {
     }else{
         return showAlertSuccess();
     }
-
 });
