@@ -25,5 +25,11 @@ document.getElementById('regBtn').addEventListener('click', function() {
        return showAlertSuccess();
     }
 
+     if (password1 !== password2) {
+        return showAlertError("Las contraseñas no coinciden.");
+    }
+
+    return showAlertSuccess();
+
     
 });
