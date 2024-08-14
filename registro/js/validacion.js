@@ -17,9 +17,9 @@ document.getElementById('regBtn').addEventListener('click', function() {
 
     // Validar que las contraseñas coincidan
     if (password1 !== password2) {
-        alertDanger.querySelector('p').textContent = 'Los datos ingresados en "Contraseña" y "Repetir contraseña" deben ser iguales.';
-        alertDanger.classList.add('show');
-        return;
+       return showAlertError
+    }else{
+        return showAlertSuccess
     }
 
 });
