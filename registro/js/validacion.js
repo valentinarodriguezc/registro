@@ -17,11 +17,10 @@ document.getElementById('regBtn').addEventListener('click', function() {
    
     const alertDanger = document.getElementById('alert-danger');
     alertDanger.classList.remove('show');
-
     
-    if (!password1 || !password2 || !nombre || !apellido || !email || !terminos) {
+    if (!password1 || !password2 || !nombre || !apellido || !email || terminos || password1 !== password2) {
        return showAlertError();
     }else{
-        return showAlertSuccess();
+       return showAlertSuccess();
     }
 });
