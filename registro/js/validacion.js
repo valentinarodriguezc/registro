@@ -19,7 +19,7 @@ document.getElementById('regBtn').addEventListener('click', function() {
     alertDanger.classList.remove('show');
 
     
-    if (!password1 || !password2 || !nombre || !apellido || !email) {
+    if (!password1 || !password2 || !nombre || !apellido || !email || !terminos) {
        return showAlertError();
     }else{
         return showAlertSuccess();
