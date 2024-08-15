@@ -9,3 +9,6 @@
     left: 50%;
     transform: translate(-50%, 0);
   }
+  #password1:invalid, #password2:invalid {
+    border: 2px solid red
+    }
