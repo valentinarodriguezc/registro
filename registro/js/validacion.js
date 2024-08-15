@@ -39,6 +39,5 @@ document.getElementById('regBtn').addEventListener('click', function() {
        showAlertError();
        return;
     }
-      
-
+    showAlertSuccess(); 
 });
