@@ -19,10 +19,20 @@ document.getElementById('regBtn').addEventListener('click', function() {
     alertDanger.classList.remove('show');
 
     
-    if (!password1 || !password2 || !nombre || !apellido || !email || password1 !== password2 || password1.lenght<6 || password2.lenght<6) {
+    if (!password1 || !password2 || !nombre || !apellido || !email) {
        return showAlertError();
     }
 
+    if (password1 !== password2){
+        showAlertError();
+        return;
+    }
+
+    if (password1.lenght<6 && password2.lenght<6) {
+        showAlertError();
+        return;
+    }
+    
     if (!terminos) {
        showAlertError();
        return;
