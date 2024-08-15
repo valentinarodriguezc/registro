@@ -39,8 +39,7 @@ document.getElementById('regBtn').addEventListener('click', function() {
        showAlertError();
        return;
     }
-      
-
+    showAlertSuccess(); 
 });
 document.addEventListener('DOMContentLoaded', function() {
     const inputs = document.querySelectorAll('input[type="password"]');
