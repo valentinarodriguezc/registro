@@ -30,7 +30,7 @@ document.getElementById('regBtn').addEventListener('click', function() {
         return;
     }
 
-    if (password1.length<6 && password2.length<6) {
+    if (password1.length<6 !== password2.length<6) {
         showAlertError();
         return;
     }
