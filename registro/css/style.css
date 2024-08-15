@@ -12,3 +12,9 @@
   #password1:invalid, #password2:invalid {
     border: 2px solid red
     }
+    input:valid {
+      border: 2px solid green;
+    }
+    input {
+      border: 2px solid #ccc; /* Color por defecto (gris) */
+    }    
