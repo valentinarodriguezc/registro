@@ -16,7 +16,9 @@ document.getElementById('regBtn').addEventListener('click', function() {
     const terminos = document.getElementById("terminos").checked;
    
     const alertDanger = document.getElementById('alert-danger');
+    const alertSuccess = document.getElementById('alert-success');
     alertDanger.classList.remove('show');
+    alertSuccess.classList.remove('show');
 
     
     if (!password1 || !password2 || !nombre || !apellido || !email) {
@@ -32,7 +34,7 @@ document.getElementById('regBtn').addEventListener('click', function() {
         showAlertError();
         return;
     }
-    
+
     if (!terminos) {
        showAlertError();
        return;
