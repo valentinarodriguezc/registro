@@ -41,24 +41,3 @@ document.getElementById('regBtn').addEventListener('click', function() {
     }
     showAlertSuccess(); 
 });
-document.addEventListener('DOMContentLoaded', function() {
-    const inputs = document.querySelectorAll('input[type="password"]');
-    
-    inputs.forEach(input => {
-        input.addEventListener('input', function() {
-            if (this.checkValidity()) {
-                this.style.border = '2px solid green';
-            } else {
-                this.style.border = '2px solid red';
-            }
-        });
-
-        input.addEventListener('blur', function() {
-            if (this.checkValidity()) {
-                this.style.border = '2px solid green';
-            } else {
-                this.style.border = '2px solid red';
-            }
-        });
-    });
-});
